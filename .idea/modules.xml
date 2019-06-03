@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eurekuserver/eurekuserver.iml" filepath="$PROJECT_DIR$/eurekuserver/eurekuserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageclient/imageclient.iml" filepath="$PROJECT_DIR$/imageclient/imageclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nlpdemo.iml" filepath="$PROJECT_DIR$/nlpdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nlpdemoclient/nlpdemoclient.iml" filepath="$PROJECT_DIR$/nlpdemoclient/nlpdemoclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuuldemo/zuuldemo.iml" filepath="$PROJECT_DIR$/zuuldemo/zuuldemo.iml" />
+    </modules>
+  </component>
+</project>

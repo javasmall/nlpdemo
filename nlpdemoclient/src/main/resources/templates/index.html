@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+        <meta charset="utf-8">
+        <title> nlpdemo  </title>
+
+<body>
+<xmp theme="united" style="display:none;">
+hello,我是bigsai。现在让我给大家提供服务。服务来源于 <a th:href="${value}"  th:text="${value}"></a>
+ . 核心过程 [csdn分析](https://blog.csdn.net/qq_40693171/article/details/85330295)
+ . [github地址](https://github.com/javasmall/python/tree/master/matplp/analyse)
+
+# 班级词云，发言时间分布
+<div>
+    <img src="http://biggsai.com:8888/image/hour.png" alt="在这里插入图片描述" height="900" width="500">
+    <img src="http://biggsai.com:8888/image/wordcloud.png" alt="在这里插入图片描述" height="900" width="500">
+    
+</div>
+# 班级情绪分析
+<div>
+        <img src="http://biggsai.com:8888/image/emotion1.png" alt="在这里插入图片描述" height="900" width="500">
+        <img src="http://biggsai.com:8888/image/emotion2.png" alt="在这里插入图片描述" height="900" width="500">
+        
+</div>
+
+#  来看看你发言了多少次？
+<div>
+    <img src="http://biggsai.com:8888/image/wordtime1.png" alt="在这里插入图片描述" height="900" width="500">
+    <img src="http://biggsai.com:8888/image/wordtime2.png" alt="在这里插入图片描述" height="900" width="500">
+
+</div>
+<div id="qq">
+#  看下你常说的话词云图？
+<div>
+    <img src="" id="img1" alt="在这里插入图片描述" width="600" height="900" >
+
+</div>
+
+# 你最近发言的情感走势？(50表示中性，0-100表示消极-积极)
+
+<div>
+    <img src="" id="img2" alt="在这里插入图片描述" width="900" height="600">
+
+</div>
+</div>
+</xmp>
+
+</body>
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+  $(function(){
+
+    var url=window.location.pathname;
+    console.log(url);
+    var b=url.split("/");
+    b=b[b.length-1];
+    console.log(b);
+    var qq=''
+    if(b.indexOf("html")==-1)
+        qq=b;
+    console.log(qq)
+    if (qq=='')
+        $("#qq").hide()
+ 
+    $("#img1").attr("src","http://biggsai.com:8888/image/img/"+qq+"cloud.png");
+    $("#img2").attr("src","http://biggsai.com:8888/image/img/"+qq+"emotion.png");
+
+  });
+   
+</script>
+</html>
